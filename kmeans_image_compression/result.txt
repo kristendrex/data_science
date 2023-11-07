@@ -1,0 +1,5 @@
+k = 2:   0.13sec.    # of empty clusters: 0
+k = 4:   0.20sec.    # of empty clusters: 0
+k = 8:   0.34sec.    # of empty clusters: 0
+k = 16:   0.37sec.    # of empty clusters: 0
+k = 32:   1.92sec.    # of empty clusters: 4

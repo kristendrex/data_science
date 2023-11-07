@@ -78,3 +78,14 @@ def isomap(file):
     Z = eig_vec[:,index[0:2]].dot(np.diag(np.sqrt(eig_val[index[0:2]])))
     
     return A, Z
+
+# function to visualize the projected dataset
+def plot_faces(z, sample, images):
+    fig, ax = plt.subplots(figsize=(10, 10))
+    ax.plot(z[:, 0], z[:, 1], '.k')
+    for i in sample:
+        single_image = images[:, i].reshape(64, 64).T
+
+        imagebox = OffsetImage(single_image, zoom=0.6, cmap = 'gray')
+        ab = AnnotationBbox(imagebox, z[i], pad=0.1)
+        ax.add_artist(ab)

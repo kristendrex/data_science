@@ -39,7 +39,6 @@ def Matrix_D(W):
     for i in range(n):
         for j in range(n):
             D[i,j] = res[i][j]
-    np.savetxt('D.csv', D)
     return D
 
 # function to visualize the projected dataset
@@ -80,7 +79,7 @@ def isomap(file):
     return A, Z
 
 # function to visualize the projected dataset
-def plot_faces(z, sample, images):
+def plot_faces(z, sample, images, file_name):
     fig, ax = plt.subplots(figsize=(10, 10))
     ax.plot(z[:, 0], z[:, 1], '.k')
     for i in sample:
@@ -88,4 +87,6 @@ def plot_faces(z, sample, images):
 
         imagebox = OffsetImage(single_image, zoom=0.6, cmap = 'gray')
         ab = AnnotationBbox(imagebox, z[i], pad=0.1)
-        ax.add_artist(ab)
+        ax.add_artist(ab)       
+    plt.savefig(file_name)
+               

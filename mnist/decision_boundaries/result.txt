@@ -1,0 +1,4 @@
+Results for MNIST Data:
+test accuracy of NB: 0.9347
+test accuracy of LR: 0.9799
+test accuracy of KN: 0.9874

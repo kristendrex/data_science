@@ -1,0 +1,3 @@
+Results for MNIST Accuracy:
+accuracy rate for #2: 0.9448
+accuracy rate for #6: 0.9927

@@ -1,0 +1,6 @@
+______________________________________________
+Classifier: Logistic Regression__________
+Average Accuracy in KFold CV: 0.7464
+Average AUC in KFold CV: 0.7396
+Average Accuracy in Randomised CV: 0.7357
+Average AUC in Randomised CV: 0.7308
